@@ -1,0 +1,27 @@
+FOOTBALL MANAGER — VERSÃO CORRIGIDA 3.4.16
+
+Extraia todos os arquivos deste ZIP em uma pasta nova. Abra o index.html que fica junto deste arquivo.
+No topo do jogo deve aparecer: Versão corrigida 3.4.16.
+
+Este pacote contém apenas uma versão do jogo, sem a subpasta antiga fmfix.
+
+Alterações:
+- Progresso do Clube com controles de melhoria.
+- Aba Salvar junto de Elenco e Mercado, com salvamento local, reinício e conta/salvamento na nuvem.
+- Ganho inicial de R$ 100 mil por clique; contador atualizado.
+- Bônus por nível do clube, jogadores e design equipado.
+- Nome do clube definido na história inicial.
+- Reiniciar jogo reabre a história e o tutorial.
+
+Uma carreira já salva mantém seu nome e melhorias: por isso o ganho pode ser maior que R$ 100 mil e a história não reaparece a cada abertura. Reiniciar jogo apaga a carreira local após confirmação.
+
+Se você usa uma hospedagem, substitua os arquivos no mesmo endereço e recarregue a página. Baixar o ZIP não atualiza automaticamente um site publicado.
+
+- Jogar Partida: bola começa no meio-campo e volta ao centro após qualquer gol.
+
+- Escolha da dificuldade junto do nome na história inicial.
+
+
+- Correção do Ranking Global: o arquivo SUPABASE_SETUP.sql agora também cria as tabelas global_ranking e global_gem_ranking, configura índices e permissões necessárias para leitura, envio, atualização e remoção, e inclui a função usada pelo botão de reiniciar ranking.
+- Para ativar a correção no site: abra o projeto Supabase conectado ao jogo, entre em SQL Editor, cole/execute o conteúdo atualizado de SUPABASE_SETUP.sql e aguarde a confirmação de sucesso. Depois recarregue o jogo.
+- Atenção: por ser um jogo que envia pontuações diretamente do navegador com chave pública, o ranking permite operações públicas e pode ser manipulado por terceiros.
